@@ -27,8 +27,56 @@
     }
   }
 
+  &__form {
+
+    &-new {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      opacity: .4;
+      transition: opacity .15s ease-in-out;
+
+      &:hover {
+        opacity: .8;
+      }
+
+      img {
+        width: 16px;
+        height: 16px;
+        margin-left: 4px;
+      }
+
+      span {
+        font-size: 16px;
+        margin-left: 19px;
+      }
+    }
+
+    &-block {
+
+      .button {
+        margin-right: 10px;
+        margin-top: 15px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
   &__items {
     margin-top: 30px;
+
+    h2 {
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 22px;
+      color: #c9d1d3;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
 
     &-row {
       display: flex;
