@@ -29,11 +29,6 @@
       "name": "Спорт",
       "colorId": 3,
       "id": 6
-    },
-    {
-      "name": "qas",
-      "colorId": 6,
-      "id": 7
     }
   ],
   "tasks": [
@@ -76,7 +71,7 @@
     {
       "listId": 4,
       "text": "Купить 1984!",
-      "completed": true,
+      "completed": false,
       "id": 10
     },
     {
@@ -96,12 +91,6 @@
       "text": "asda",
       "completed": false,
       "id": 15
-    },
-    {
-      "listId": 7,
-      "text": "111",
-      "completed": false,
-      "id": 16
     }
   ],
   "colors": [

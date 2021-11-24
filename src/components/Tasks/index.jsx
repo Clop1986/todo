@@ -23,13 +23,13 @@ const Tasks = ({list, onEditTitle, onAddTask, withoutEmpty, onRemoveTask, onEdit
   }  
 
   return (
-    <div className="tasks">
-      <Link to={`/lists/${list.id}`}>
-        <h2 className="tasks__title" style={{color: list.color.hex}}>
+    <div className="tasks">      
+      <h2 className="tasks__title" style={{color: list.color.hex}}>
+        <Link to={`/lists/${list.id}`}>
           {list.name}
-          <img src={editSvg} alt="edit" onClick={editTitle} />
-        </h2>
-      </Link>
+        </Link>
+        <img src={editSvg} alt="edit" onClick={editTitle} />
+      </h2>      
       <div className="tasks__items">
         {!withoutEmpty && list.tasks && !list.tasks.length && <h2>Задачи отсутствуют</h2>}
         {

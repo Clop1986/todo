@@ -23,7 +23,10 @@ const List = ({ items, isRemovable, onClick, onRemove, onClickItem, activeItem }
         items.map((item, index) => (
           <li key={index} className={classNames(item.className, {active: item.active ? item.active : activeItem && activeItem.id === item.id})} onClick={onClickItem ? () => onClickItem(item) : null}>
             <i>{item.icon ? item.icon : <Badge color={item.color.name} />}</i>
-            <span>{item.name}{item.tasks && ` (${item.tasks.length})`}</span>
+            <div>
+              <span title={item.name}>{item.name}</span>
+              {item.tasks && <span>({item.tasks.length})</span>}              
+            </div>            
             {isRemovable && <img src={removeSvg} alt="Remove" className="list__remove-icon" onClick={() => removeList(item)} />}
           </li>
         ))

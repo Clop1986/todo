@@ -39,13 +39,22 @@
       }
     }
 
-    span {
-      flex: 1;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-      width: 160px;
-    }
+    div {
+      display: flex;
+      width: 140px;
+
+      span {      
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;         
+  
+        &+span {
+          text-overflow: unset;
+          margin: 0 5px;
+          flex-shrink: 0;
+        }
+      }
+    }    
 
     .badge {
       position: relative;
