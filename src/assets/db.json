@@ -2,12 +2,12 @@
   "lists": [
     {
       "id": 1,
-      "name": "Продажи",
+      "name": "Покупки",
       "colorId": 5
     },
     {
       "id": 2,
-      "name": "Фронтенд",
+      "name": "Front-end",
       "colorId": 4
     },
     {
@@ -22,7 +22,7 @@
     },
     {
       "id": 5,
-      "name": "Личное",
+      "name": "Back-end",
       "colorId": 1
     },
     {
@@ -41,56 +41,212 @@
     {
       "id": 2,
       "listId": 2,
-      "text": "Изучить паттерны проектирования",
-      "completed": false
+      "text": "Изучить jQuery",
+      "completed": true
     },
     {
       "id": 3,
       "listId": 2,
-      "text": "ReactJS Hooks (useState, useReducer, useEffect и т.д.)",
+      "text": "Изучить ReactJS",
       "completed": false
     },
     {
       "id": 4,
       "listId": 2,
-      "text": "Redux (redux-observable, redux-saga)",
+      "text": "Изучить HTML",
       "completed": false
     },
     {
       "listId": 1,
-      "text": "test",
-      "completed": false,
+      "text": "Купить телевизор",
+      "completed": true,
       "id": 6
     },
     {
       "listId": 1,
-      "text": "qweqwe1",
-      "completed": false,
+      "text": "Купить телефон",
+      "completed": true,
       "id": 7
     },
     {
       "listId": 4,
-      "text": "Купить 1984!",
+      "text": "Как меняться",
       "completed": false,
       "id": 10
     },
     {
       "listId": 3,
-      "text": "vxcvxbvxc",
+      "text": "Посмотреть Игра престолов",
       "completed": false,
       "id": 13
     },
     {
       "listId": 5,
-      "text": "wre",
+      "text": "NodeJS",
       "completed": false,
       "id": 14
     },
     {
       "listId": 5,
-      "text": "asda",
+      "text": "PHP",
       "completed": false,
       "id": 15
+    },
+    {
+      "listId": 1,
+      "text": "Купить кофемашину",
+      "completed": false,
+      "id": 16
+    },
+    {
+      "listId": 1,
+      "text": "Купить кровать",
+      "completed": false,
+      "id": 17
+    },
+    {
+      "listId": 1,
+      "text": "Купить стол",
+      "completed": false,
+      "id": 18
+    },
+    {
+      "listId": 1,
+      "text": "Купить стул",
+      "completed": false,
+      "id": 19
+    },
+    {
+      "listId": 1,
+      "text": "Купить квадроцикл",
+      "completed": true,
+      "id": 20
+    },
+    {
+      "listId": 2,
+      "text": "Изучить CSS",
+      "completed": true,
+      "id": 21
+    },
+    {
+      "listId": 3,
+      "text": "Посмотреть Мстители",
+      "completed": true,
+      "id": 22
+    },
+    {
+      "listId": 3,
+      "text": "Посмотреть Шерлок",
+      "completed": false,
+      "id": 23
+    },
+    {
+      "listId": 3,
+      "text": "Посмотреть День независимости",
+      "completed": false,
+      "id": 24
+    },
+    {
+      "listId": 3,
+      "text": "Посмотреть Человек паук",
+      "completed": false,
+      "id": 25
+    },
+    {
+      "listId": 3,
+      "text": "Посмотреть Джентльмены",
+      "completed": true,
+      "id": 26
+    },
+    {
+      "listId": 3,
+      "text": "Посмотреть Острые козырьки",
+      "completed": false,
+      "id": 27
+    },
+    {
+      "listId": 3,
+      "text": "Посмотреть Робокоп",
+      "completed": true,
+      "id": 28
+    },
+    {
+      "listId": 3,
+      "text": "Посмотреть Война миров",
+      "completed": false,
+      "id": 29
+    },
+    {
+      "listId": 3,
+      "text": "Посмотреть Ведьмак",
+      "completed": true,
+      "id": 30
+    },
+    {
+      "listId": 3,
+      "text": "Посмотреть Звездные войны",
+      "completed": false,
+      "id": 31
+    },
+    {
+      "listId": 4,
+      "text": "От выгорания к балансу",
+      "completed": false,
+      "id": 32
+    },
+    {
+      "listId": 4,
+      "text": "Эмоциональный интеллект в сложных коммуникациях",
+      "completed": false,
+      "id": 33
+    },
+    {
+      "listId": 4,
+      "text": "Как перестать срываться на детей",
+      "completed": false,
+      "id": 34
+    },
+    {
+      "listId": 4,
+      "text": "«Программист-прагматик. Путь от подмастерья к мастеру», Дейв Томас, Энди Хант",
+      "completed": false,
+      "id": 35
+    },
+    {
+      "listId": 4,
+      "text": "«Чистый код. Создание, анализ и рефакторинг», Роберт Мартин",
+      "completed": false,
+      "id": 36
+    },
+    {
+      "listId": 4,
+      "text": "«Совершенный код. Мастер-класс», Стив Макконнелл",
+      "completed": false,
+      "id": 37
+    },
+    {
+      "listId": 5,
+      "text": "Python",
+      "completed": false,
+      "id": 38
+    },
+    {
+      "listId": 5,
+      "text": "Ruby",
+      "completed": false,
+      "id": 39
+    },
+    {
+      "listId": 5,
+      "text": "C++",
+      "completed": false,
+      "id": 40
+    },
+    {
+      "listId": 5,
+      "text": "C#",
+      "completed": false,
+      "id": 41
     }
   ],
   "colors": [

@@ -10,13 +10,13 @@ const Task = ({id, text, completed, list, onRemove, onEdit, onComplete}) => {
     <div key={id} className="tasks__items-row">
       <div className="checkbox">
         <input id={`task-${id}`} type="checkbox" onChange={onChangeCheckbox} checked={completed} />
-        <label htmlFor={`task-${id}`}>
+        <label className="checkbox__check" htmlFor={`task-${id}`}>
           <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.29999 1.20001L3.79999 6.70001L1.29999 4.20001" stroke="#f2f2f2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-        </label>          
-      </div>
-      <p>{text}</p>
+        </label>   
+        <label className="checkbox__text" htmlFor={`task-${id}`}>{text}</label>       
+      </div>      
       <div className="tasks__items-row-actions">
         <div onClick={() => onEdit(list.id, {id, text})}>
           <svg

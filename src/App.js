@@ -120,7 +120,7 @@ function App() {
     <div className="todo">      
       <div className={`todo__sidebar${isHamburgerOpen ? ' active' : ''}`}>
         <div className="hamburger">
-          <Hamburger toggled={isHamburgerOpen} toggle={setHamburgerOpen} />
+          <Hamburger toggled={isHamburgerOpen} toggle={setHamburgerOpen} rounded />
         </div>
         <List 
           onClickItem={() => {
