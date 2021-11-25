@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import {Route, Routes, useNavigate, useLocation} from 'react-router-dom';
+import { Squash as Hamburger } from 'hamburger-react';
 
 import {List, AddButtonList, Tasks} from './components';
 
@@ -10,6 +11,7 @@ function App() {
   const [activeItem, setActiveItem] = useState(null);
   let history = useNavigate(); 
   const location = useLocation();
+  const [isHamburgerOpen, setHamburgerOpen] = useState(false);
 
   useEffect(() => {
     axios.get('http://localhost:3001/lists?_expand=color&_embed=tasks').then(({data}) => {
@@ -115,11 +117,15 @@ function App() {
   }, [lists, location.pathname]);
 
   return (
-    <div className="todo">
-      <div className="todo__sidebar">
+    <div className="todo">      
+      <div className={`todo__sidebar${isHamburgerOpen ? ' active' : ''}`}>
+        <div className="hamburger">
+          <Hamburger toggled={isHamburgerOpen} toggle={setHamburgerOpen} />
+        </div>
         <List 
           onClickItem={() => {
             history('/');
+            setHamburgerOpen();
           }}
           items={[
             {
@@ -142,6 +148,7 @@ function App() {
             }}
             onClickItem={list => {
               history(`/lists/${list.id}`);
+              setHamburgerOpen();
             }}
             activeItem={activeItem}
             isRemovable

@@ -20,7 +20,7 @@ const Tasks = ({list, onEditTitle, onAddTask, withoutEmpty, onRemoveTask, onEdit
         alert('Не удалось обновить название списка!');
       });
     }
-  }  
+  }   
 
   return (
     <div className="tasks">      

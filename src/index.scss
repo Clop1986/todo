@@ -23,12 +23,32 @@ body {
   font-size: 14px;
   display: flex; 
   margin: 0 auto; 
+  overflow-x: hidden;
+  position: relative;
 
   &__sidebar {
     background-color: #f4f6f8;
     width: 240px;    
     border-right: 1px solid #f1f1f1;
-    padding: 60px 20px;    
+    padding: 60px 20px;  
+    position: relative;  
+
+    @media (max-width: 1200px) {
+      padding: 60px 48px;
+      width: 288px;
+      transform: translateX(-240px);
+      transition: all .3s ease-in-out;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+
+      &.active {
+        padding: 60px 20px;
+        width: 240px;
+        transform: translateX(0);        
+      }
+    }
   } 
   
   &__tasks {
@@ -82,5 +102,16 @@ body {
     &:active {
       background-color: darken(#f4f6f8, 6%);
     }
+  }
+}
+
+.hamburger {
+  display: none;
+
+  @media (max-width: 1200px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
   }
 }

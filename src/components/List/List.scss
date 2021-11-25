@@ -28,11 +28,18 @@
       background-color: #ffffff;
       box-shadow: 0 3px 10px rgba(0, 0, 0, .04);
       border-radius: 4px;
+
+      #{$self}__remove-icon {
+
+        @media (max-width: 1200px) {
+          opacity: 1;
+        }
+      }
     }  
     
     #{$self}__remove-icon {
       opacity: 0; 
-      transition: opacity .15s ease-in-out;
+      transition: opacity .15s ease-in-out;      
       
       &:hover {
         opacity: .8;
