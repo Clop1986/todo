@@ -14,7 +14,7 @@ const Tasks = ({list, onEditTitle, onAddTask, withoutEmpty, onRemoveTask, onEdit
     const newTitle = window.prompt('Название списка', list.name);
     if (newTitle) {
       onEditTitle(list.id, newTitle);
-      axios.patch('http://localhost:3001/lists/' + list.id, {
+      axios.patch('/lists/' + list.id, {
         name: newTitle
       }).catch(() => {
         alert('Не удалось обновить название списка!');
